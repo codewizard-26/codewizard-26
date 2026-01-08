@@ -80,9 +80,9 @@
   <a href="https://git-scm.com/">
     <img src="https://skillicons.dev/icons?i=git" height="40"/>
   </a>
-  <a href="https://www.linux.org/">
+  <!-- <a href="https://www.linux.org/">
     <img src="https://skillicons.dev/icons?i=linux" height="40"/>
-  </a>
+  </a> -->
 </p>
 
 ---
