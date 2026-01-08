@@ -3,7 +3,7 @@
 <h3 align="center">Engineering Student | Aspiring Software Developer</h3>
 
 <p align="center">
-  🌐 Web Development • 🤖 AI & Data Science • 🧠 DSA
+  🌐 Web Development • 🧠 DSA
 </p>
 
 ---
@@ -36,8 +36,7 @@
 
 ## 🧠 Competitive Programming
 
-- 🟡 LeetCode Profile: https://leetcode.com/YOUR_LEETCODE_USERNAME/
-
+- 🟡 LeetCode Profile: https://leetcode.com/u/code-wizards26/
 <p align="center">
   <img src="https://leetcode-stats.vercel.app/api?username=YOUR_LEETCODE_USERNAME&theme=tokyonight" />
 </p>
