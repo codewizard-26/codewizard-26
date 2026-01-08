@@ -71,21 +71,30 @@
 
 ## 📊 GitHub Stats
 
-| GitHub Stats | Streak |
-|-------------|--------|
-| ![](https://github-readme-stats.vercel.app/api?username=codewizard-260w-26&show_icons=true&theme=tokyonight&rank_icon=github) | ![](https://github-readme-streak-stats.herokuapp.com/?user=codewizard-26&theme=tokyonight) |
+<p align="center">
+  <a href="https://github.com/codewizard-26">
+    <img src="https://img.shields.io/badge/Profile-codewizard--26-blue?style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://github.com/codewizard-26?tab=repositories">
+    <img src="https://img.shields.io/badge/Public%20Repos-View-green?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/codewizard-26?tab=followers">
+    <img src="https://img.shields.io/badge/Followers-View-orange?style=for-the-badge" />
+  </a>
+</p>
 
-| Top Languages |
-|---------------|
-| ![](https://github-readme-stats.vercel.app/api/top-langs/?username=codewizard-26&layout=compact&theme=tokyonight) |
+<p align="center">
+  <img src="https://img.shields.io/github/commit-activity/m/codewizard-26?style=flat-square&label=Monthly%20Commits" />
+  <img src="https://img.shields.io/github/last-commit/codewizard-26/codewizard-26?style=flat-square&label=Last%20Commit" />
+</p>
 
----
-
-## 🔥 GitHub Contribution Graph
-![](https://github-readme-activity-graph.vercel.app/graph?username=codewizard-26&theme=tokyo-night)
-
----
-
+### 🧑‍💻 Top Languages
+<p align="center">
+  <img src="https://img.shields.io/badge/C++-DSA-blue?logo=cplusplus&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-Problem%20Solving-yellow?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-Frontend-black?logo=javascript" />
+  <img src="https://img.shields.io/badge/HTML-CSS-orange?logo=html5" />
+</p>
 ## 📌 Currently Working On
 - 🚀 Strengthening **DSA in C++**
 - 🌐 Building **Frontend Projects**
