@@ -90,7 +90,6 @@
 ## 📌 Currently Working On
 - 🚀 Strengthening **DSA in C++**
 - 🌐 Building **Frontend Projects**
-- 🤖 Learning **AI & Data Science fundamentals**
 
 ---
 
