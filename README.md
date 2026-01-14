@@ -21,11 +21,11 @@
 ## 🧠 LeetCode Stats
 
 <p align="center">
-  <img src="https://leetcode-stats.vercel.app/api?username=code-wizards26&theme=dark" />
+  <img src="https://leetcode-stats.vercel.app/api?username=codewizard-26&theme=dark" />
 </p>
 
 <p align="center">
-  <img src="https://leetcard.jacoblin.cool/code-wizards26?theme=dark&font=Karma&ext=heatmap" />
+  <img src="https://leetcard.jacoblin.cool/codewizard-26?theme=dark&font=Karma&ext=heatmap" />
 </p>
 
 ---
