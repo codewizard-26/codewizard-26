@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="https://github.com/codewizard-26">GitHub</a> •
-  <a href="https://leetcode.com/u/code-wizards26/">LeetCode</a> •
+  <a href="https://leetcode.com/u/codewizard-26/">LeetCode</a> •
   <a href="https://www.linkedin.com/in/yashwant-singh26">LinkedIn</a>
 </p>
 
