@@ -11,7 +11,7 @@
 
 ## 🚀 About Me
 - 🎓 Engineering student (CSE / IT)
-- 💻 Interested in **Web Development, DSA & AI**
+- 💻 Interested in **Web Development,DSA**
 - 🌱 Currently learning **JavaScript, React & DSA**
 - 🧠 Practicing problem-solving on **LeetCode**
 - 📍 India
