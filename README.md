@@ -7,22 +7,23 @@
   <a href="https://www.linkedin.com/in/yashwant-singh26">LinkedIn</a>
 </p>
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=codewizard-26&label=Profile%20views&color=0e75b6&style=flat" />
+</p>
+
 ---
 
 ## 🚀 About Me
-- 🎓 Engineering student (CSE / IT)
-- 💻 Interested in **Web Development,DSA**
-- 🌱 Currently learning **JavaScript, React & DSA**
-- 🧠 Practicing problem-solving on **LeetCode**
-- 📍 India
+
+- 🎓 Engineering student (CSE / IT)  
+- 💻 Interested in **Web Development & Data Structures**  
+- 🌱 Currently learning **React & DSA**  
+- 🧠 Practicing problem-solving on **LeetCode**  
+- 📍 India  
 
 ---
 
 ## 🧠 LeetCode Stats
-
-<p align="center">
-  <img src="https://leetcode-stats.vercel.app/api?username=codewizard-26&theme=dark" />
-</p>
 
 <p align="center">
   <img src="https://leetcard.jacoblin.cool/codewizard-26?theme=dark&font=Karma&ext=heatmap" />
@@ -30,74 +31,51 @@
 
 ---
 
-## 📈 GitHub Activity Graph
-
-<p align="center">
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=codewizard-26&theme=tokyo-night&hide_border=true"
-  />
-</p>
-
----
-
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img
-    src="https://img.shields.io/badge/GitHub-codewizard--26-181717?style=for-the-badge&logo=github"
-  />
-  <img
-    src="https://img.shields.io/github/repos/codewizard-26?style=for-the-badge&label=Public%20Repos"
-  />
-  <img
-    src="https://img.shields.io/github/followers/codewizard-26?style=for-the-badge&label=Followers"
-  />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=codewizard-26&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="170" src="https://streak-stats.demolab.com?user=codewizard-26&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
 
-## 🛠️ Top Languages & Tools
+
+## 🛠️ Languages & Tools
 
 <p align="center">
-  <a href="https://isocpp.org/">
-    <img src="https://skillicons.dev/icons?i=cpp" height="40"/>
-  </a>
-  <a href="https://www.python.org/">
-    <img src="https://skillicons.dev/icons?i=python" height="40"/>
-  </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-    <img src="https://skillicons.dev/icons?i=javascript" height="40"/>
-  </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-    <img src="https://skillicons.dev/icons?i=html" height="40"/>
-  </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-    <img src="https://skillicons.dev/icons?i=css" height="40"/>
-  </a>
-  <a href="https://react.dev/">
-    <img src="https://skillicons.dev/icons?i=react" height="40"/>
-  </a>
-  <a href="https://git-scm.com/">
-    <img src="https://skillicons.dev/icons?i=git" height="40"/>
-  </a>
-  <!-- <a href="https://www.linux.org/">
-    <img src="https://skillicons.dev/icons?i=linux" height="40"/>
-  </a> -->
+  <img src="https://skillicons.dev/icons?i=cpp" height="45"/>
+  <img src="https://skillicons.dev/icons?i=python" height="45"/>
+  <img src="https://skillicons.dev/icons?i=javascript" height="45"/>
+  <img src="https://skillicons.dev/icons?i=html" height="45"/>
+  <img src="https://skillicons.dev/icons?i=css" height="45"/>
+  <img src="https://skillicons.dev/icons?i=react" height="45"/>
+  <img src="https://skillicons.dev/icons?i=git" height="45"/>
 </p>
 
 ---
 
 ## 📌 Currently Working On
+
 - 🚀 Strengthening **DSA in C++**
 - 🌐 Building **Frontend Projects**
+- ⚡ Improving **React**
 
 ---
 
 ## 🤝 Connect With Me
-- 💼 LinkedIn: https://www.linkedin.com/in/yashwant-singh26
-- 💻 GitHub: https://github.com/codewizard-26
-- 🧠 LeetCode: https://leetcode.com/u/code-wizards26/
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/yashwant-singh26">
+    <img src="https://skillicons.dev/icons?i=linkedin" height="45"/>
+  </a>
+  <a href="https://github.com/codewizard-26">
+    <img src="https://skillicons.dev/icons?i=github" height="45"/>
+  </a>
+</p>
 
 ---
 
-⚡ *Consistency beats motivation. Every single day.*
+<p align="center">
+⚡ <b>Consistency beats motivation. Every single day.</b>
+</p>
