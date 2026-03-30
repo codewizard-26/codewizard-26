@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Yashwant Singh</h1>
-<h3 align="center">Engineering Student | Aspiring Software Developer</h3>
+<h3 align="center">Full Stack Developer | React.js | Node.js</h3>
 
 <p align="center">
   <a href="https://github.com/codewizard-26">GitHub</a> •
@@ -15,10 +15,11 @@
 
 ## 🚀 About Me
 
-- 🎓 Engineering student (CSE / IT)  
-- 💻 Interested in **Web Development & Data Structures**  
-- 🌱 Currently learning **React & DSA**  
-- 🧠 Practicing problem-solving on **LeetCode**  
+- 🎓 B.Tech Computer Engineering student  
+- 💻 Building **full-stack web applications using React.js & Node.js**  
+- 🌱 Currently improving **Data Structures & Algorithms (C++)**  
+- 🧠 Solving problems consistently on **LeetCode**  
+- 🎯 Focused on **scalable apps, clean UI, and real-world projects**  
 - 📍 India  
 
 ---
@@ -34,18 +35,16 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=codewizard-26&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=codewizard-26&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=1800" />
   <img height="170" src="https://streak-stats.demolab.com?user=codewizard-26&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
 
-
 ## 🛠️ Languages & Tools
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=cpp" height="45"/>
-  <img src="https://skillicons.dev/icons?i=python" height="45"/>
   <img src="https://skillicons.dev/icons?i=javascript" height="45"/>
   <img src="https://skillicons.dev/icons?i=html" height="45"/>
   <img src="https://skillicons.dev/icons?i=css" height="45"/>
@@ -57,9 +56,9 @@
 
 ## 📌 Currently Working On
 
-- 🚀 Strengthening **DSA in C++**
-- 🌐 Building **Frontend Projects**
-- ⚡ Improving **React**
+- 🚀 Strengthening **DSA in C++ (LeetCode practice)**
+- 🌐 Building **responsive fronten & full-stack projects**
+- ⚡ Improving **Node.js and API integration skills**
 
 ---
 
