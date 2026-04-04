@@ -15,7 +15,7 @@
 
 ## 🚀 About Me
 
-- 🎓 B.Tech Computer Engineering student  
+- 🎓 BE Computer Engineering student  
 - 💻 Building **full-stack web applications using React.js & Node.js**  
 - 🌱 Currently improving **Data Structures & Algorithms (C++)**  
 - 🧠 Solving problems consistently on **LeetCode**  
