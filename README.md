@@ -53,12 +53,12 @@
 
 ### 💻 Languages
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cpp,js,ts,html,css,sql&theme=dark" alt="Languages" />
+  <img src="https://skillicons.dev/icons?i=cpp,js,html,css,sql&theme=dark" alt="Languages" />
 </p>
 
 ### 🎨 Frontend Ecosystem
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind,bootstrap&theme=dark" alt="Frontend" />
+  <img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind&theme=dark" alt="Frontend" />
 </p>
 
 ### ⚙️ Backend & Databases
