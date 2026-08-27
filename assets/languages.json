@@ -1,0 +1,11 @@
+{
+  "title": "codewizard-26 · language mix",
+  "axes": [
+    { "label": "JavaScript", "value": 80 },
+    { "label": "TypeScript", "value": 50 },
+    { "label": "C++", "value": 60 },
+    { "label": "Node / Express", "value": 80 },
+    { "label": "SQL / Databases", "value": 65 },
+    { "label": "HTML / CSS", "value": 90 }
+  ]
+}

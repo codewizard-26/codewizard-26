@@ -1,0 +1,12 @@
+{
+  "title": "Skill Radar",
+  "_comment": "Self-rated skill breakdown on a 0-100 scale.",
+  "axes": [
+    { "label": "Frontend", "value": 80 },
+    { "label": "Backend", "value": 70 },
+    { "label": "Databases", "value": 65 },
+    { "label": "DSA", "value": 70 },
+    { "label": "System Design", "value": 55 },
+    { "label": "Dev Tools / Git", "value": 75 }
+  ]
+}

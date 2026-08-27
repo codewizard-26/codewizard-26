@@ -1,0 +1,16 @@
+flowchart LR
+    subgraph Client["Client Layer (React.js / Next.js)"]
+        UI["User Interface (Tailwind CSS / Redux)"] --> API["API Gateway Requests"]
+    end
+
+    subgraph Server["Backend Engine (Node.js / Express / C++)"]
+        API --> Express["Express REST & GraphQL API"]
+        Express --> Auth["JWT & Middleware Security"]
+        Auth --> Algo["C++ Core Algorithmic Engine"]
+    end
+
+    subgraph Data["Database & Storage Layer"]
+        Express --> Prisma["Prisma ORM Layer"]
+        Prisma --> Mongo[("MongoDB Document Store")]
+        Prisma --> Postgres[("PostgreSQL Database")]
+    end

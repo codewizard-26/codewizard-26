@@ -1,0 +1,21 @@
+{
+  "_comment": "Featured repos, in README order.",
+  "projects": [
+    {
+      "repo": "Yashas",
+      "description": "A centralized platform and hub for students to manage, discover, and track curricular and extracurricular activities."
+    },
+    {
+      "repo": "Athlete-Management",
+      "description": "A full-stack athletic performance and data management system for tracking player metrics, scheduling, and training regimens."
+    },
+    {
+      "repo": "Internship-tracker",
+      "description": "A streamlined tracking application to manage job applications, interview pipelines, status updates, and deadlines."
+    },
+    {
+      "repo": "Zenith-Algoforge26",
+      "description": "A hackathon project engineered for patient health record analysis, diagnostic tracking, and medical data management."
+    }
+  ]
+}
