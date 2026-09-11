@@ -18,7 +18,6 @@
 <a href="https://leetcode.com/u/codewizard-26"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"></a>
 <a href="https://codolio.com/profile/code-wizards26"><img src="https://img.shields.io/badge/Codolio-6366F1?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codolio"></a>
 <a href="https://profile.hackthebox.com/profile/01a005a8-56bf-70b2-b408-562f339ee1b3?utm_medium=copy_url"><img src="https://img.shields.io/badge/HackTheBox-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="HackTheBox"></a>
-<a href="https://drive.google.com/file/d/1duetjj7pn4jE86IT8noPak7bBrHvn-4k/view?usp=drive_link"><img src="https://img.shields.io/badge/Resume-111111?style=for-the-badge&logo=googledrive&logoColor=white" alt="Resume"></a>
 
 <br><br>
 
