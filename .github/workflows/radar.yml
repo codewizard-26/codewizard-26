@@ -31,9 +31,11 @@ jobs:
       - name: Skill radar
         run: python scripts/radar.py --data assets/skills.json -o assets/radar
 
-      # Hand-authored language mix radar (edit assets/languages.json to change it)
+      # Dynamically fetched language mix radar from GitHub repos
       - name: Language radar
-        run: python scripts/radar.py --data assets/languages.json -o assets/radar-langs --values
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python scripts/radar.py --github "${{ github.repository_owner }}" -o assets/radar-langs --values
 
       # Self-hosted stat and repo cards.
       - name: Stat and repo cards
