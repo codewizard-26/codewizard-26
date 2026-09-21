@@ -110,11 +110,9 @@ def from_github(user: str, token: str | None, limit: int, exclude: set[str],
         sys.exit(f"no language data found for '{user}' (private repos need a token)")
 
     top = sorted(totals.items(), key=lambda kv: -kv[1])[:limit]
-    peak = top[0][1]
-    # Raw byte ratios are brutally lopsided — one dominant language leaves every
-    # other axis pinned near the centre and the shape reads as a spike. `curve`
-    # compresses that: 1.0 is linear, 0.5 (default) is sqrt, lower spreads more.
-    axes = [(n, round(100 * (c / peak) ** curve, 1)) for n, c in top]
+    total_bytes = sum(c for n, c in top)
+    # Calculate true percentages of the total bytes
+    axes = [(n, round(100 * c / total_bytes, 1)) for n, c in top]
     return f"{user} · language mix", axes
 
 
