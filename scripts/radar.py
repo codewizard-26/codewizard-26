@@ -111,8 +111,15 @@ def from_github(user: str, token: str | None, limit: int, exclude: set[str],
 
     top = sorted(totals.items(), key=lambda kv: -kv[1])[:limit]
     total_bytes = sum(c for n, c in top)
-    # Calculate true percentages of the total bytes
-    axes = [(n, round(100 * c / total_bytes, 1)) for n, c in top]
+    peak = top[0][1]
+    
+    # Calculate draw values using curve to prevent visual spike, but use true percentages for labels
+    axes = []
+    for n, c in top:
+        draw_val = 100 * (c / peak) ** curve
+        true_pct = 100 * c / total_bytes
+        axes.append((n, round(draw_val, 1), round(true_pct, 1)))
+        
     return f"{user} · language mix", axes
 
 
@@ -147,20 +154,24 @@ def render(title, axes, theme: str, size: int, rings: int, show_values: bool,
     r = size / 2 - 8
     gap = 20  # how far the labels sit beyond the outer ring
 
-    vals = [max(0.0, min(100.0, v)) for _, v in axes]
+    # extract draw values
+    vals = [max(0.0, min(100.0, item[1])) for item in axes]
     outer = ring(r, n)
 
     # Lay the labels out first, in centre-relative coordinates, so the viewBox
     # can be sized around whatever they actually occupy. A fixed viewBox clips
     # long labels on the left/right spokes.
     labels = []
-    for i, (label, _) in enumerate(axes):
+    for i, item in enumerate(axes):
+        label = item[0]
+        disp_v = item[2] if len(item) > 2 else item[1]
+        
         ang = -math.pi / 2 + i * 2 * math.pi / n
         cosv, sinv = math.cos(ang), math.sin(ang)
         lx, ly = (r + gap) * cosv, (r + gap) * sinv
         anchor = "middle" if abs(cosv) < 0.25 else ("start" if cosv > 0 else "end")
         dy = 4 if abs(sinv) < 0.25 else (14 if sinv > 0 else -5)
-        labels.append((lx, ly + dy, anchor, label, vals[i]))
+        labels.append((lx, ly + dy, anchor, label, disp_v))
 
     minx, maxx, miny, maxy = -r, r, -r, r
     for lx, ly, anchor, label, v in labels:
