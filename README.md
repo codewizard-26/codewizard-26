@@ -70,9 +70,9 @@ I’m a software engineer in the making, driven by ambitious ideas and the chall
 
 <!-- Language mix radar - edit assets/languages.json or refreshed by GitHub Actions -->
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="assets/radar-langs-dark.svg?v=4">
-  <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg?v=4">
-  <img src="assets/radar-langs-dark.svg?v=4" width="380" alt="language radar chart">
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/radar-langs-dark.svg?v=5">
+  <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg?v=5">
+  <img src="assets/radar-langs-dark.svg?v=5" width="380" alt="language radar chart">
 </picture>
 
 </td>
