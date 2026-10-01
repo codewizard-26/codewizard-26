@@ -1,4 +1,4 @@
-﻿name: Charts and cards
+name: Charts and cards
 
 on:
   schedule:
@@ -35,7 +35,7 @@ jobs:
       - name: Language radar
         env:
           GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
-        run: python scripts/radar.py --data assets/languages.json -o assets/radar-langs --values
+        run: python scripts/radar.py --github ${{ github.repository_owner }} -o assets/radar-langs --values
 
       # Self-hosted stat and repo cards.
       - name: Stat and repo cards

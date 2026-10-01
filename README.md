@@ -21,7 +21,7 @@
 
 <br><br>
 
-<img src="https://komarev.com/ghpvc/?username=codewizard-26&style=flat&color=22d3ee&label=profile+views" alt="profile views">
+<img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fcodewizard-26&label=profile+views&countColor=%2322d3ee&style=flat" alt="profile views">
 
 </div>
 
