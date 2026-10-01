@@ -92,7 +92,7 @@ def from_github(user: str, token: str | None, limit: int, exclude: set[str],
         if not repos:
             break
         for repo in repos:
-            if repo.get("fork") or repo.get("archived") or repo.get("name") == user:
+            if repo.get("fork") or repo.get("archived") or repo.get("name", "").lower() == user.lower():
                 continue
             try:
                 langs = _api(repo["languages_url"], token)
