@@ -116,7 +116,11 @@ I’m a software engineer in the making, driven by ambitious ideas and the chall
 
 <br><br>
 
-<img src="assets/metrics.languages.svg" width="480" alt="most used languages">
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/card-languages-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-languages-light.svg">
+  <img src="assets/metrics.languages.svg" width="480" alt="most used languages">
+</picture>
 
 </div>
 

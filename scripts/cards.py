@@ -29,12 +29,12 @@ THEMES = {
     "dark": {
         "bg": "#0d1117", "border": "#30363d", "title": "#39d353",
         "text": "#c9d1d9", "muted": "#8b949e", "value": "#e6edf3",
-        "accent": "#39d353",
+        "accent": "#39d353", "bar_bg": "#21262d",
     },
     "light": {
         "bg": "#ffffff", "border": "#d0d7de", "title": "#1a7f37",
         "text": "#1f2328", "muted": "#57606a", "value": "#1f2328",
-        "accent": "#1a7f37",
+        "accent": "#1a7f37", "bar_bg": "#e1e4e8",
     },
 }
 
@@ -208,6 +208,71 @@ def render_stats(user, stats, theme):
     return frame(W, H, c, "".join(out), f"{user} GitHub statistics")
 
 
+def format_bytes(b):
+    if b >= 1024 * 1024:
+        return f"{b / (1024 * 1024):.2f} MB"
+    elif b >= 1024:
+        return f"{b / 1024:.1f} kB"
+    return f"{b} B"
+
+
+def render_languages(user, lang_totals, theme):
+    c = THEMES[theme]
+    W = 480
+    pad = 22
+    bar_w = W - 2 * pad
+    bar_h = 8
+
+    total_bytes = sum(b for _, b in lang_totals)
+    top_langs = [(name, b, (b / total_bytes) * 100) for name, b in lang_totals if b > 0][:8]
+
+    cols = 2
+    rows = (len(top_langs) + cols - 1) // cols
+    rh = 26
+    top_list = pad + 66
+    H = top_list + rows * rh + pad - 6
+
+    out = [
+        f'<text x="{pad}" y="{pad + 14}" font-size="15" font-weight="700" '
+        f'fill="{c["title"]}">{esc(user)}</text>',
+        f'<text x="{W - pad}" y="{pad + 14}" font-size="11" text-anchor="end" '
+        f'fill="{c["muted"]}">most used languages</text>',
+        f'<line x1="{pad}" y1="{pad + 24}" x2="{W - pad}" y2="{pad + 24}" '
+        f'stroke="{c["border"]}"/>',
+    ]
+
+    bar_y = pad + 38
+    clip_id = f"bar-clip-{theme}"
+    out.append(f'<defs><clipPath id="{clip_id}"><rect x="{pad}" y="{bar_y}" width="{bar_w}" height="{bar_h}" rx="4"/></clipPath></defs>')
+    out.append(f'<rect x="{pad}" y="{bar_y}" width="{bar_w}" height="{bar_h}" rx="4" fill="{c.get("bar_bg", "#21262d")}"/>')
+    out.append(f'<g clip-path="url(#{clip_id})">')
+
+    cur_x = pad
+    for name, b, pct in top_langs:
+        col = LANG_COLOR.get(name, "#8b949e")
+        seg_w = max(2.5, bar_w * (b / total_bytes))
+        out.append(f'<rect x="{cur_x:.1f}" y="{bar_y}" width="{seg_w:.1f}" height="{bar_h}" fill="{col}"/>')
+        cur_x += seg_w
+    out.append('</g>')
+
+    col_w = bar_w / cols
+    for i, (name, b, pct) in enumerate(top_langs):
+        col_idx = i % cols
+        row_idx = i // cols
+        lx = pad + col_idx * col_w
+        ly = top_list + row_idx * rh
+        col = LANG_COLOR.get(name, "#8b949e")
+        size_str = format_bytes(b)
+        pct_str = f"{pct:.1f}%" if pct >= 0.1 else "<0.1%"
+
+        out.append(f'<circle cx="{lx + 5:.1f}" cy="{ly + 4:.1f}" r="4.5" fill="{col}"/>')
+        out.append(f'<text x="{lx + 16:.1f}" y="{ly + 8:.1f}" font-size="12" font-weight="600" fill="{c["text"]}">{esc(name)}</text>')
+        details = f"{size_str} ({pct_str})"
+        out.append(f'<text x="{lx + col_w - 12:.1f}" y="{ly + 8:.1f}" font-size="11" text-anchor="end" fill="{c["muted"]}">{details}</text>')
+
+    return frame(W, H, c, "".join(out), f"{user} most used languages")
+
+
 def render_repo(repo, theme):
     c = THEMES[theme]
     W, H = 420, 132
@@ -291,6 +356,26 @@ def main(argv=None):
         dest = args.out / f"card-stats-{theme}.svg"
         dest.write_text(render_stats(args.user, tiles, theme), encoding="utf-8")
     print(f"wrote card-stats-*.svg  ({len(tiles)} tiles)")
+
+    lang_totals = {}
+    for r in owned:
+        if r.get("archived") or r["name"].lower() == args.user.lower():
+            continue
+        try:
+            langs = rest(r["languages_url"].replace("https://api.github.com", ""), token)
+            for lang, b in langs.items():
+                lang_totals[lang] = lang_totals.get(lang, 0) + b
+        except urllib.error.HTTPError:
+            continue
+
+    sorted_langs = sorted(lang_totals.items(), key=lambda kv: -kv[1])
+    for theme in ("dark", "light"):
+        dest = args.out / f"card-languages-{theme}.svg"
+        dest.write_text(render_languages(args.user, sorted_langs, theme), encoding="utf-8")
+    (args.out / "metrics.languages.svg").write_text(
+        render_languages(args.user, sorted_langs, "dark"), encoding="utf-8"
+    )
+    print(f"wrote card-languages-*.svg and metrics.languages.svg ({len(sorted_langs)} languages)")
 
     if not args.projects.exists():
         print(f"no {args.projects}, skipping repo cards")
